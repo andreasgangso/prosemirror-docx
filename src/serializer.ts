@@ -261,6 +261,7 @@ export class DocxSerializerState {
       new ImageRun({
         ...imageRunOpts,
         data: buffer,
+        type: 'png',
         transformation: {
           ...(imageRunOpts?.transformation || {}),
           width,
