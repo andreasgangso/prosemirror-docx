@@ -1,6 +1,6 @@
 import { Document, INumberingOptions, ISectionOptions, Packer, SectionType } from 'docx';
 import { Node as ProsemirrorNode } from 'prosemirror-model';
-import { IFootnotes } from './types';
+import { IFootnotes } from './types.js';
 
 export function createShortId() {
   return Math.random().toString(36).substr(2, 9);

@@ -26,9 +26,9 @@ import {
   ITableRowOptions,
 } from 'docx';
 import sizeOf from 'buffer-image-size';
-import { createNumbering, NumberingStyles } from './numbering';
-import { createDocFromState, createShortId } from './utils';
-import { IFootnotes, INumbering, Mutable } from './types';
+import { createNumbering, NumberingStyles } from './numbering.js';
+import { createDocFromState, createShortId } from './utils.js';
+import { IFootnotes, INumbering, Mutable } from './types.js';
 
 // This is duplicated from @curvenote/schema
 export type AlignOptions = 'left' | 'center' | 'right';

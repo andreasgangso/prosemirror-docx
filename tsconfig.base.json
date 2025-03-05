@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "Node16",
     "esModuleInterop": true,
-    "target": "es6",
+    "target": "ES2022",
     "noImplicitAny": true,
     "strict": true,
-    "moduleResolution": "node",
-    "lib": ["es2019", "DOM"],
+    "moduleResolution": "node16",
+    "lib": ["ES2022", "DOM"],
     "sourceMap": true,
-    "outDir": "dist/cjs",
+    "outDir": "dist/",
     "baseUrl": "src",
     "paths": {
       "*": ["node_modules/*", "types/*"]

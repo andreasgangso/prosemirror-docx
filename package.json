@@ -4,9 +4,10 @@
   "description": "Export from a prosemirror document to Microsoft word",
   "author": "Rowan Cockett <rowan@curvenote.com>",
   "license": "MIT",
-  "main": "dist/cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],

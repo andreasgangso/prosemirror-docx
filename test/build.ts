@@ -1,8 +1,7 @@
 import { Schema } from 'prosemirror-model';
+import { schema } from 'prosemirror-test-builder';
 import { builders } from 'prosemirror-test-builder';
-import { schemas } from '@curvenote/schema';
 
-const schema = new Schema(schemas.presets.full);
 
 export const tnodes = builders(schema, {
   p: { nodeType: 'paragraph' },
@@ -17,9 +16,6 @@ export const tnodes = builders(schema, {
   br: { nodeType: 'hard_break' },
   img: { nodeType: 'image', src: 'img.png', alt: 'x' },
   a: { markType: 'link', href: 'https://example.com' },
-  math: { nodeType: 'math' },
-  equation: { nodeType: 'equation', numbered: true, id: 'eq1' },
-  equationUnnumbered: { nodeType: 'equation', numbered: false, id: 'eq2' },
   abbr: { nodeType: 'abbr', title: 'Cascading Style Sheets' },
   aside: { nodeType: 'aside' },
   figure: { nodeType: 'figure' },
